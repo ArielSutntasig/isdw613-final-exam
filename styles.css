@@ -7,9 +7,9 @@ body {
 
 div {
     width: 90%;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 36rem;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -21,7 +21,7 @@ h2 {
 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 form label, form input {
@@ -31,11 +31,11 @@ form label, form input {
 
 form button {
     grid-column: span 2;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: #007BFF;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     cursor: pointer;
 }
 
@@ -49,7 +49,7 @@ table {
 }
 
 table th, table td {
-    padding: 10px;
+    padding: 0.625rem;
     border: 1px solid #ddd;
 }
 
@@ -57,12 +57,24 @@ table th {
     background-color: #f8f8f8;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
     form {
         grid-template-columns: 1fr;
     }
 
     form button {
         grid-column: span 1;
+    }
+}
+
+@media (min-width: 37.5em) and (max-width: 75em) {
+    div {
+        width: 95%;
+    }
+}
+
+@media (min-width: 75em) {
+    div {
+        width: 80%;
     }
 }
